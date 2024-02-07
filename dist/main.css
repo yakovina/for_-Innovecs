@@ -1,0 +1,73 @@
+#container {
+    position: relative;
+    width: 42%;
+    height: 440px;
+    margin: 0 auto;
+    min-width: 600;
+}
+#container #slot-machine {
+    position: relative;
+    height: 100vh;
+    width: 533px;
+    margin: 0 auto;
+}
+#container #slot-machine #slots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 353px;
+    height: 146px;
+    padding-left: 8px;
+    padding-top: 11px;
+    perspective: 1000px;
+}
+#container #slot-machine #slots .container {
+    width: 100px;
+    height: 120px;
+    position: relative;
+    float: left;
+    perspective: 1000px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+#container #slot-machine #slots .slot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+}
+#container #slot-machine #slots .slot figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 116px;
+    font-size: 120px;
+    color: white;
+    background-color: brown;
+}
+#container #slot-machine #slots .slot figure:nth-child(1) {
+    transform: rotateX(0deg) translateZ(35px);
+}
+#container #slot-machine #slots .slot figure:nth-child(2) {
+    transform: rotateX(120deg) translateZ(35px);
+}
+#container #slot-machine #slots .slot figure:nth-child(3) {
+    transform: rotateX(240deg) translateZ(35px);
+}
+
+button{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 300px;
+    background-color: brown;
+    color: #fff;
+    font-size: 18px;
+}

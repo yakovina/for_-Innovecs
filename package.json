@@ -1,0 +1,30 @@
+{
+  "name": "for_innovecs",
+  "version": "1.0.0",
+  "description": "test_slot_machine",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yakovina/for_innovecs.git"
+  },
+  "author": "Oleksandra Yakovyna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yakovina/for_innovecs/issues"
+  },
+  "homepage": "https://github.com/yakovina/for_innovecs#readme",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "events": "^3.3.0"
+  }
+}
